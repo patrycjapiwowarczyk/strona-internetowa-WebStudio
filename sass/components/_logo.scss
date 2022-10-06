@@ -1,0 +1,18 @@
+.logo {
+  font-family: getFont("font2");
+  @include fontVar(normal, 700, 26px, 100%, 0.03em);
+  text-decoration: none;
+
+  &--blue {
+    color: getColor("text-hover")
+  }
+
+  &--gray {
+    color: getColor("text-black")
+  }
+
+  &--white {
+    color: getColor("text-on-darkparts")
+  }
+
+}

@@ -1,0 +1,58 @@
+$colors: (
+  "text-primary": #212121,
+  "text-secondary": #757575,
+  "text-on-darkparts": #ffffff,
+  "text-on-darkparts2": rgba(255, 255, 255, 0.6),
+  "text-hover": #2196f3,
+  "text-black": #000000,
+  "text-placeholder-on-dark": rgba(255, 255, 255, 0.6),
+  "text-placeholder": rgba(117, 117, 117, 0.5),
+  "bcgnd-primary": #ffffff,
+  "bcgnd-secondary": #f5f4fa,
+  "bcgnd-dark": #2f303a,
+  "bcgnd-dark-transparent": rgba(47, 48, 58, 0.8),
+  "bcgnd-blue-transparent": rgba(33, 150, 243, 0.9),
+  "bcgnd-gray-transparent": rgba(47, 48, 58, 0.4),
+  "border-header": #ececec,
+  "border-logos": #afb1b8,
+  "border-logos-hover": #2196f3,
+  "border-projectsbox": #eeeeee,
+  "border-form-input": rgba(33, 33, 33, 0.2),
+  "border-form-input-on-dark": rgba(255, 255, 255, 0.3),
+  "buttons": #2196f3,
+  "svg-fill": #afb1b8,
+  "svg-fill-light": #ffffff,
+  "svg-fill-hover": #2196f3,
+  "svg-bcgnd-on-light": #ffffff,
+  "svg-bcgnd-on-dark": rgba(255, 255, 255, 0.1),
+  "svg-bcgnd-hover": #2196f3,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+$font-family: (
+  "font1": "Roboto",
+  "font2": "Raleway",
+);
+
+@function getFont($key) {
+  @return map-get($font-family, $key);
+}
+
+@mixin fontVar($style, $weight, $size, $height, $spacing) {
+  font-style: $style;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $spacing;
+}
+
+$hovertransition: ("250ms cubic-bezier(0.4, 0, 0.2, 1)");
+
+@mixin flexVar($display, $justify, $align) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+}

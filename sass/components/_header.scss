@@ -1,0 +1,31 @@
+.header {
+  @include flexVar(flex, center, none);
+  background-color: getColor("bcgnd-primary");
+  border: 1px solid getColor("border-header");
+}
+
+.header__container {
+  @include flexVar(flex, space-between, center);
+  flex-direction: row;
+  @extend .container;
+}
+
+.header__leftside {
+  @include flexVar(flex, none, center);
+  flex-direction: row;
+}
+
+.header__rightside {
+  display: flex;
+}
+
+.header__logo {
+  width: 145px;
+  height: 31px;
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+
+//  logo
+//  navigation
+//  contact-info
