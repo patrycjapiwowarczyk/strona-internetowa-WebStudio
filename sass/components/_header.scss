@@ -1,5 +1,4 @@
 .header {
-  @include flexVar(flex, center, none);
   background-color: getColor("bcgnd-primary");
   border: 1px solid getColor("border-header");
 }
@@ -8,15 +7,21 @@
   @include flexVar(flex, space-between, center);
   flex-direction: row;
   @extend .container;
+  width: 100%;
 }
 
 .header__leftside {
-  @include flexVar(flex, none, center);
+  @include flexVar(flex, none, flex-start);
   flex-direction: row;
+  width: 100%;
 }
 
 .header__rightside {
   display: flex;
+}
+
+.header__logo {
+  justify-items: flex-start;
 }
 
 .header__logo {
@@ -25,7 +30,3 @@
   margin-top: 24px;
   margin-bottom: 25px;
 }
-
-//  logo
-//  navigation
-//  contact-info
