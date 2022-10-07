@@ -1,9 +1,0 @@
-.gray-section {
-  background: getColor("bcgnd-secondary");
-  @include flexVar(flex, center, none);
-}
-
-.gray-section__container {
-  @extend .container;
-  @extend .section;
-}

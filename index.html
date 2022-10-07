@@ -16,46 +16,47 @@
     <script defer src="https://i.icomoon.io/public/temp/0eba9493ed/spriteSVG/svgxuse.js"></script>
   </head>
   <body class="body">
-        <div class="header">
-          <header class="header__container">
-              <div class="header__leftside">
-                <a class="logo header__logo" href="./index.html"><span class="logo--blue">Web</span><span class="logo--gray">Studio</span></a>
-                <!-- <nav class="navigation">
-                  <ul class="navigation__container">
-                    <li>
-                      <a class="navigation__text" href="./index.html"><span class="navigation__current-page">Agencja</span></a>
-                    </li>
-                    <li><a class="navigation__text" href="./portfolio.html">Portfolio</a></li>
-                    <li class="navigation__text">Kontakt</li>
-                  </ul>
-                </nav> -->
-              </div>
-              <!-- <div class="header__rightside">
-                <div class="contact-info">
-                <ul class="contact-info__container">
-                  <li>
-                    <a class="contact-info__text" href="mailto:info@devstudio.com">
-                      <svg class="contact-info__icons" width="16px" height="12px">
-                        <use href="images/icons.svg/sprite.svg#icon-envelope"></use>
-                      </svg>
-                      info@devstudio.com</a
-                    >
-                  </li>
-                  <li>
-                    <a class="contact-info__text" href="tel:+48111111111">
-                      <svg class="contact-info__icons" width="10px" height="16px">
-                        <use href="images/icons.svg/sprite.svg#icon-smartphone"></use>
-                      </svg>
-                      +48 111 111 111</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              </div> -->
-          </header>
-      </div>
-      <!-- <main>
-        <div class="overlay">
+    <div class="header page-header">
+      <header class="header__container containerr">
+        <a class="logo header__logo" href="./index.html"><span class="logo--blue">Web</span><span class="logo--gray">Studio</span></a>
+        <nav class="navigation">
+          <ul class="navigation__container menu">
+            <li>
+              <a class="navigation__text link" href="./index.html"><span class="navigation__current-page">Agencja</span></a>
+            </li>
+            <li><a class="navigation__text link" href="./portfolio.html">Portfolio</a></li>
+            <li class="navigation__text link">Kontakt</li>
+          </ul>
+        </nav>
+        <div class="contact-info">
+          <ul class="contact-info__container">
+            <li>
+              <a class="contact-info__text" href="mailto:info@devstudio.com">
+                <svg class="contact-info__icons" width="16px" height="12px">
+                  <use href="images/icons.svg/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="contact-info__text" href="tel:+48111111111">
+                <svg class="contact-info__icons" width="10px" height="16px">
+                  <use href="images/icons.svg/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +48 111 111 111</a
+              >
+            </li>
+          </ul>
+        </div>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </header>
+    </div>
+    <main class="containerr">
+      <!-- <div class="overlay">
           <div class="overlay__container">
               <section class="overlay__section">
                 <h1 class="h1-heading">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
@@ -309,9 +310,9 @@
               </ul>
             </div>
             </section>
-        </div>
-      </main>
-      <div class="footer">
+        </div>-->
+    </main>
+    <!-- <div class="footer">
           <footer class="footer__container">
             <div class="footer__contact">
                 <a class="logo" href="./index.html"><span class="logo--blue">Web</span><span class="logo--white">Studio</span></a>
@@ -363,10 +364,56 @@
                   </button>
                 </form>
               </div>
-          </footer> -->
-
+          </footer> 
+    </div>-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+          <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <div class="mobile-menu__container">
+        <ul class="mobile-menu">
+          <li>
+            <a class="navigation__text" href="./index.html"><span class="navigation__current-page">Agencja</span></a>
+          </li>
+          <li><a class="navigation__text" href="./portfolio.html">Portfolio</a></li>
+          <li class="navigation__text">Kontakt</li>
+        </ul>
+        <ul class="mobile-contact">
+          <li>
+            <a class="mobile-contact__phone" href="tel:+48111111111"> +48 111 111 111</a>
+          </li>
+          <li>
+            <a class="mobile-contact__mail" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile-social">
+          <li><a class="mobile-social-text">Instagram</a></li>
+          <li>
+            <svg class="mobile-social-svg" xmlns="http://www.w3.org/2000/svg" version="1.1">
+              <line x1="0" y1="0" x2="0" y2="22" style="stroke: rgba(33, 33, 33, 0.2); stroke-width: 1" />
+            </svg>
+          </li>
+          <li><a class="mobile-social-text">Twitter</a></li>
+          <li>
+            <svg class="mobile-social-svg" xmlns="http://www.w3.org/2000/svg" version="1.1">
+              <line x1="0" y1="0" x2="0" y2="22" style="stroke: rgba(33, 33, 33, 0.2); stroke-width: 1" />
+            </svg>
+          </li>
+          <li><a class="mobile-social-text">Facebook</a></li>
+          <li>
+            <svg class="mobile-social-svg" xmlns="http://www.w3.org/2000/svg" version="1.1">
+              <line x1="0" y1="0" x2="0" y2="22" style="stroke: rgba(33, 33, 33, 0.2); stroke-width: 1" />
+            </svg>
+          </li>
+          <li><a class="mobile-social-text">Linkedin</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="backdrop is-hidden" data-modal>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="backdrop__container">
         <div class="close-button">
         <button class="close-button__container" type="button" data-modal-close>
@@ -440,6 +487,6 @@
     </div>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> -->
   </body>
 </html>
