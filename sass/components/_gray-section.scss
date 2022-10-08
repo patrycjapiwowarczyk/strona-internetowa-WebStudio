@@ -1,0 +1,10 @@
+.gray-section {
+  background: getColor("bcgnd-secondary");
+}
+
+.gray-section__container {
+  @extend .container;
+  @extend .section;
+  flex-direction: column;
+  @include flexVar(flex, center, center);
+}

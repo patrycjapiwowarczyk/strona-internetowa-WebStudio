@@ -1,0 +1,31 @@
+.overlay {
+  @include flexVar(flex, center, none);
+  background-color: getColor("bcgnd-dark");
+}
+
+.overlay__container {
+  margin-left: auto;
+  margin-right: auto;
+  @include flexVar(flex, center, none);
+  min-width: 480px;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../../images/overlaymobile@2x.jpg");
+}
+
+.h1-heading {
+  width: 365px;
+  @include fontVar(normal, 900, 26px, 162%, 0.06em);
+  text-align: center;
+  text-transform: uppercase;
+  color: getColor("text-on-darkparts");
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.overlay__section {
+  @include flexVar(flex, center, center);
+  flex-direction: column;
+}

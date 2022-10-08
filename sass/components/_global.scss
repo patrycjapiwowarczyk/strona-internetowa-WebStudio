@@ -28,8 +28,8 @@
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .list {
@@ -39,9 +39,7 @@
 
 .h2-heading {
   white-space: nowrap;
-  width: 352px;
-  height: 42px;
-  @include fontVar(normal, 700, 36px, 100%, 0.03em);
+  @include fontVar(normal, 700, 28px, 100%, 0.03em);
   text-align: center;
   margin-left: auto;
   margin-right: auto;

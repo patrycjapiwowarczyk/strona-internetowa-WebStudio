@@ -1,0 +1,11 @@
+.logos-section {
+    background-color: getColor("bcgnd-primary");
+    @include flexVar(flex, center, none);
+  }
+  
+  .logos-section__container {
+    @extend .container;
+    @extend .section;
+    flex-direction: column;
+  }
+  

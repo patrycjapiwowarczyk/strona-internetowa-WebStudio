@@ -1,0 +1,25 @@
+.main-section {
+  @include flexVar(flex, center, none);
+  background-color: getColor("bcgnd-primary");
+}
+
+.main-section__container {
+  flex-direction: column;
+  padding-bottom: 0px;
+  @extend .container;
+  @extend .section;
+}
+
+.main-section__information-boxes {
+  flex-wrap: wrap;
+  column-gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  @extend .list;
+}
+
+.services-section__container {
+  display: none;
+  @extend .container;
+  @extend .section;
+}
