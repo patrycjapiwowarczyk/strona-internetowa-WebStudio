@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  background: getColor("bcgnd-dark");
+}
+
+.footer__container {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.text-heading {
+  @include fontVar(normal, 700, 14px, 100%, 0.03em);
+  text-transform: uppercase;
+  color: getColor("text-on-darkparts");
+  margin-bottom: 20px;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
