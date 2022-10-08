@@ -1,1 +1,57 @@
+@media screen and (min-width: 768px) {
+  .contact-info__container {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+  }
 
+  .contact-info__text {
+    text-decoration: none;
+    @include fontVar(normal, 500, 14px, 100%, 0.02em);
+    color: getColor("text-secondary");
+    fill: getColor("text-secondary");
+    @include flexVar(flex, center, center);
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      color: getColor("text-hover");
+      fill: getColor("text-hover");
+      transition: $hovertransition;
+    }
+  }
+
+  .contact-info__icons {
+    margin-right: 10px;
+    margin-left: 0;
+  }
+
+  .contact-info:last-child a {
+    display: flex;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contact-info__container >>> .contact-info__icons:first-of-type {
+    width: 14px;
+    height: 10px;
+  }
+
+  .contact-info__container >>> .contact-info__icons:last-of-type {
+    width: 10px;
+    height: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-info__container {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+}

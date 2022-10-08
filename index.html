@@ -18,16 +18,18 @@
   <body class="body">
     <div class="header page-header">
       <header class="header__container containerr">
+        <div class="header__rightside">
         <a class="logo header__logo" href="./index.html"><span class="logo--blue">Web</span><span class="logo--gray">Studio</span></a>
         <nav class="navigation">
-          <ul class="navigation__container menu">
+          <ul class="navigation__container">
             <li>
-              <a class="navigation__text link" href="./index.html"><span class="navigation__current-page">Agencja</span></a>
+              <a class="navigation__text" href="./index.html"><span class="navigation__current-page">Agencja</span></a>
             </li>
-            <li><a class="navigation__text link" href="./portfolio.html">Portfolio</a></li>
-            <li class="navigation__text link">Kontakt</li>
+            <li><a class="navigation__text" href="./portfolio.html">Portfolio</a></li>
+            <li class="navigation__text">Kontakt</li>
           </ul>
         </nav>
+      </div>
         <div class="contact-info">
           <ul class="contact-info__container">
             <li>
@@ -361,7 +363,7 @@
                 </form>
               </div>
           </footer> 
-    </div>-->
+    </div>
     <div class="menu-container js-menu-container" id="mobile-menu">
       <div class="toglee-cont">
         <button class="menu-togglee js-close-menu">
@@ -396,7 +398,7 @@
     </div>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
     <script defer src="./js/mobile-menu.js"></script>
-    <!-- <div class="backdrop is-hidden" data-modal>
+ <div class="backdrop is-hidden" data-modal>
       <div class="backdrop__container">
         <div class="close-button">
         <button class="close-button__container" type="button" data-modal-close>
@@ -406,7 +408,9 @@
         </button>
       </div>
         <div class="data-form">
-        <a class="form-heading">Zostaw swoje dane w formularzu poniżej</a>
+          <div class="form-heading">
+        <a class="form-heading__container">Zostaw swoje dane w formularzu poniżej</a>
+      </div>
         <form class="data-form__container" name="data-form" autocomplete="on" novalidate>
           <div class="data-form__label">
           <label for="username"><a class="data-form__text">Imie</a>
@@ -461,11 +465,11 @@
                     >Politykę Prywatności</a>.
                 </span>
               </label>
+            </div>  
+            <div class="button">
+              <button class="button__container" type="submit"><span class="button__text">Wyślij</span>
+              </button>
             </div>
-          <div class="button">
-        <button class="button__container" type="submit"><span class="button__text">Wyślij</span>
-        </button>
-      </div>
       </form>
     </div>
       </div>

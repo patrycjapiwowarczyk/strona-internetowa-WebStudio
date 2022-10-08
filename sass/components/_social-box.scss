@@ -35,3 +35,18 @@
     transition: $hovertransition;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .social-box {
+    margin-top: 0;
+    margin-left: 144px;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-box {
+    margin-top: 12px;
+    margin-left: 70px;
+  }
+}

@@ -38,3 +38,14 @@
     transition: $hovertransition;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .contact-box__container {
+    margin-top: 20px;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}

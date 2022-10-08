@@ -1,0 +1,39 @@
+.navigation__container {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .navigation__container {
+    display: none;
+  }
+  .contact-info__container {
+    display: none;
+  }
+}
+
+.navigation__container .navigation__text {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navigation__container .navigation__text:hover,
+.navigation__container .navigation__text:focus {
+  text-decoration: underline;
+}
+
+.navigation__text:hover,
+.navigation__text:focus {
+  color: #2196f3;
+}
+
+.navigation__container {
+  gap: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+ 
+}

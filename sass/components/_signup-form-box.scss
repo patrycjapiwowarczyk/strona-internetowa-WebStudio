@@ -73,3 +73,21 @@ label .signup-form__email:focus {
   display: flex;
   fill: getColor("svg-fill-hover");
 }
+
+@media screen and (min-width: 768px) {
+  .signup-form {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .signup-form {
+    width: 452px;
+    margin-left: 78px;
+  }
+  .signup-form__container {
+    @include flexVar(flex, center, center);
+    flex-direction: row;
+    margin-left: 20px;
+  }
+}

@@ -23,3 +23,10 @@
     transition: $hovertransition;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .logo-boxes__logo-box {
+    width: 170px;
+    height: 92px;
+  }
+}

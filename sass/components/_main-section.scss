@@ -16,10 +16,25 @@
   margin-left: auto;
   margin-right: auto;
   @extend .list;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .services-section__container {
-  display: none;
-  @extend .container;
   @extend .section;
+}
+
+@media screen and (max-width: 1199px) {
+  .services-section__container {
+    display: none;
+  }
 }

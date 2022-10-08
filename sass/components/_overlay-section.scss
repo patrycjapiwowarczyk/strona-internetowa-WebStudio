@@ -12,7 +12,19 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../../images/overlaymobile@2x.jpg");
+  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/overlaymobile.jpg");
+
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+    min-height: 400px;
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/overlaytablet.jpg");
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 1600px;
+    min-height: 600px;
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/overlaylaptop.jpg");
+  }
 }
 
 .h1-heading {
@@ -28,4 +40,16 @@
 .overlay__section {
   @include flexVar(flex, center, center);
   flex-direction: column;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .overlay__container {
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/overlaymobile@2x.jpg");
+  }
+  .overlay__container {
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/overlaytablet@2x.jpg");
+  }
+  .overlay__container {
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/overlaylaptop@2x.jpg");
+  }
 }

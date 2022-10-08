@@ -21,15 +21,28 @@
   display: flex;
 
   @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
   }
 
   @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
   }
 }
 
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .list {
@@ -43,4 +56,8 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    @include fontVar(normal, 700, 36px, 100%, 0.03em);
+  }
 }

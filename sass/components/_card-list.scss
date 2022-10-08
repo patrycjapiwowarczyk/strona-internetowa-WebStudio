@@ -62,3 +62,39 @@
     transition: $hovertransition;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .card-list__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @extend .list;
+  }
+
+  .card-list__card {
+    width: 354px;
+    height: 536px;
+  }
+
+  .card-list__card img {
+    width: 354px;
+    height: 374px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-list__container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card-list__card {
+    width: 270px;
+    height: 428px;
+  }
+
+  .card-list__card img {
+    width: 270px;
+    height: 260px;
+  }
+}
