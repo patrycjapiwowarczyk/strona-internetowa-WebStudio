@@ -12,6 +12,10 @@
   font-family: getFont("font1"), getFont("font2");
   @include fontVar(normal, 400, 14px, none, none);
   color: getColor("text-primary");
+
+  @media screen and (min-width: 320px) {
+    overflow-x: hidden;
+  }
 }
 
 .container {

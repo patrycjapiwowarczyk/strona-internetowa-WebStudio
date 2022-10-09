@@ -1,11 +1,11 @@
-.mobile-menu,
+.navigation-mobile__menu,
 .mobile-contact,
 .mobile-social {
   margin: 0;
   list-style: none;
 }
 
-.mobile-menu__container {
+.navigation-mobile__container {
   padding: 48px 40px;
   width: 100vw;
   height: 100vh;
@@ -14,14 +14,14 @@
   position: fixed;
 }
 
-.mobile-menu {
+.navigation-mobile__menu {
   display: flex;
   flex-direction: column;
   gap: 32px;
   margin-top: -48px;
 }
 
-.mobile-menu .navigation__text {
+.navigation-mobile__menu .navigation__text {
   text-decoration: none;
   @include fontVar(normal, 500, 40px, 47px, 0.02em);
   color: getColor("text-primary");
@@ -46,7 +46,7 @@
   text-decoration: none;
 }
 
-.menu-toggle {
+.navigation-open-button {
   min-height: 40px;
   min-width: 40px;
   @include flexVar(flex, center, center);
@@ -59,11 +59,11 @@
   visibility: visible;
 }
 
-.toglee-cont {
+.navigation-close-button {
   @include flexVar(flex, flex-end, none);
 }
 
-.menu-togglee {
+.navigation-close-button__container {
   @include flexVar(flex, center, center);
   margin: 0;
   padding: 0;
@@ -78,19 +78,19 @@
 }
 
 @media (min-width: 768px) {
-  .menu-toggle {
+  .navigation-open-button {
     display: none;
   }
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus,
-.menu-togglee:hover,
-.menu-togglee:focus {
+.navigation-open-button:hover,
+.navigation-open-button:focus,
+.navigation-close-button__container:hover,
+.navigation-close-button__container:focus {
   color: getColor("text-hover");
 }
 
-.menu-container {
+.navigation-mobile {
   position: absolute;
   top: 0;
   left: 0;
@@ -102,7 +102,7 @@
   transition: transform 250ms ease-in-out;
 }
 
-.menu-container.is-open {
+.navigation-mobile.is-open {
   transform: translateX(0);
 }
 
@@ -126,7 +126,7 @@
   }
 }
 
-.mobile-social-text {
+.mobile-social__text {
   @include fontVar(normal, 500, 18px, 22px, 0.02em);
   color: getColor("text-hover");
 }

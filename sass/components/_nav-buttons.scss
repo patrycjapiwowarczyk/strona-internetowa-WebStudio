@@ -1,9 +1,10 @@
 .nav-buttons__container {
-  @include flexVar(flex, center, none);
+  @include flexVar(flex, flex-start, flex-start);
   margin-left: auto;
   margin-right: auto;
   flex-wrap: wrap;
   gap: 8px;
+  margin-bottom: -20px;
 }
 
 .nav-buttons__button {
@@ -31,4 +32,10 @@
   background-color: getColor("text-hover");
   color: getColor("text-on-darkparts");
   border-color: getColor("text-hover");
+}
+
+@media screen and (min-width: 768px) {
+  .nav-buttons__container {
+    @include flexVar(flex, center, center);
+  }
 }

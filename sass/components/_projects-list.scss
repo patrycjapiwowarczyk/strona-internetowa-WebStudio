@@ -1,5 +1,4 @@
 .projects-list__container {
-  width: 1170px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 56px;
@@ -12,7 +11,8 @@
 
 .projects-list__project-box {
   box-sizing: border-box;
-  width: 370px;
+  width: 450px;
+  height: 404px;
   background: getColor("bcgnd-primary");
   border: 1px solid getColor("border-projectsbox");
 
@@ -27,6 +27,11 @@
 .projects-list__pic {
   overflow: hidden;
   position: relative;
+}
+
+.projects-list__pic img {
+  width: 450px;
+  height: 294px;
 }
 
 .projects-list__description {
@@ -49,7 +54,7 @@
   position: absolute;
   left: inherit;
   top: inherit;
-  width: 370px;
+  width: 450px;
   height: 294px;
   transform: translateY(100%);
   @include flexVar(flex, none, center);
@@ -68,4 +73,33 @@
   transform: translateY(-100%);
   transition-duration: 400ms;
   transition: $hovertransition;
+}
+
+@media screen and (min-width: 768px) {
+  .projects-list__project-box {
+    width: 354px;
+    height: 440px;
+  }
+  .projects-list__pic img {
+    width: 354px;
+    height: 294px;
+  }
+  .projects-list__animation {
+    width: 354px;
+    height: 294px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-list__project-box {
+    width: 370px;
+  }
+  .projects-list__pic img {
+    width: 370px;
+    height: 294px;
+  }
+  .projects-list__animation {
+    width: 370px;
+    height: 294px;
+  }
 }
