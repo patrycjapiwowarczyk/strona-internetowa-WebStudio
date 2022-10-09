@@ -2,10 +2,8 @@
   width: 206px;
   height: 80px;
   margin-top: 12px;
-  display: flex;
+  @include flexVar(flex, center, center);
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .social-box .social-box__container {

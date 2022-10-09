@@ -9,9 +9,8 @@
   padding: 48px 40px;
   width: 100vw;
   height: 100vh;
-  display: flex;
+  @include flexVar(flex, space-between, none);
   flex-direction: column;
-  justify-content: space-between;
   position: fixed;
 }
 
@@ -24,11 +23,7 @@
 
 .mobile-menu .navigation__text {
   text-decoration: none;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 47px;
-  text-decoration: none;
+  @include fontVar(normal, 500, 40px, 47px, 0.02em);
   color: getColor("text-primary");
 }
 
@@ -40,31 +35,21 @@
 }
 
 .mobile-contact__mail {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.02em;
-  color: #757575;
+  @include fontVar(normal, 500, 24px, 28px, 0.02em);
+  color: getColor("text-secondary");
   text-decoration: none;
 }
 
 .mobile-contact__phone {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 40px;
-  letter-spacing: 0.02em;
-  color: #2196f3;
+  @include fontVar(normal, 500, 34px, 40px, 0.02em);
+  color: getColor("text-hover");
   text-decoration: none;
 }
 
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexVar(flex, center, center);
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -75,14 +60,11 @@
 }
 
 .toglee-cont {
-  display: flex;
-  justify-content: flex-end;
+  @include flexVar(flex, flex-end, none);
 }
 
 .menu-togglee {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexVar(flex, center, center);
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -105,7 +87,7 @@
 .menu-toggle:focus,
 .menu-togglee:hover,
 .menu-togglee:focus {
-  color: #2196f3;
+  color: getColor("text-hover");
 }
 
 .menu-container {
@@ -114,7 +96,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #ffffff;
+  background-color: getColor("bcgnd-primary");
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
@@ -129,9 +111,8 @@
   margin-right: auto;
   height: 22px;
   list-style: none;
-  display: flex;
+  @include flexVar(flex, space-between, none);
   flex-direction: row;
-  justify-content: space-between;
   gap: 20px;
 
   & > li:not(:first-of-type)::before {
@@ -146,10 +127,6 @@
 }
 
 .mobile-social-text {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.02em;
-  color: #2196f3;
+  @include fontVar(normal, 500, 18px, 22px, 0.02em);
+  color: getColor("text-hover");
 }

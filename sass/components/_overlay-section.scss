@@ -53,3 +53,11 @@
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/overlaylaptop@2x.jpg");
   }
 }
+
+@media (min-width: 1200px) {
+  .h1-heading {
+    width: 696px;
+    height: 120px;
+    @include fontVar(normal, 900, 44px, 136%, 0.06em);
+  }
+}

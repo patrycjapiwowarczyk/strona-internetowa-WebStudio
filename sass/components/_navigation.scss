@@ -27,7 +27,7 @@
 
 .navigation__text:hover,
 .navigation__text:focus {
-  color: #2196f3;
+  color: getColor("text-hover");
 }
 
 .navigation__container {
