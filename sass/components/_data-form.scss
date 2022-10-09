@@ -11,9 +11,6 @@
 }
 
 .data-form {
-  padding-left: 40px;
-  padding-top: 40px;
-  padding-bottom: 40px;
   width: 450px;
   height: 609px;
 }
@@ -191,4 +188,37 @@ textarea {
   position: absolute;
   margin-top: 65px;
   margin-left: 84px;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-heading {
+    width: 448px;
+    height: 23px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .data-form {
+    width: 528px;
+    height: 581px;
+  }
+
+  .data-form__input,
+  .data-form__comment-input {
+    width: 448px;
+  }
+
+  .statement-text {
+    font-size: 14px;
+    line-height: 171%;
+  }
+
+  .data-form__checkbox {
+    margin-left: 17px;
+  }
+
+  .data-form__container .button {
+    margin-top: 70px;
+    margin-left: 124px;
+  }
 }

@@ -1,6 +1,4 @@
 .footer {
-  display: flex;
-  justify-content: center;
   background: getColor("bcgnd-dark");
   width: 100%;
   height: 100%;
@@ -8,13 +6,9 @@
 
 .footer__container {
   padding-top: 60px;
-  display: flex;
+  @include flexVar(flex, center, center);
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding-bottom: 60px;
-  width: 1200px;
-  height: 100%;
 }
 
 .text-heading {
@@ -25,10 +19,8 @@
 }
 
 .footer__contact {
-  display: flex;
+  @include flexVar(flex, center, center);
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -40,8 +32,27 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .footer {
+    @include flexVar(flex, center, center);
+  }
+
   .footer__container {
-    display: flex;
+    @include flexVar(flex, flex-start, flex-start);
     flex-direction: row;
+    width: 1200px;
+    margin: 0;
+    gap: 0px;
+    height: 252px;
+  }
+
+  .footer__contact {
+    margin: 0;
+    padding: 0;
+    @include flexVar(flex, none, flex-start);
+    margin-left: 12px;
+  }
+
+  .text-heading {
+    margin-top: 0px;
   }
 }

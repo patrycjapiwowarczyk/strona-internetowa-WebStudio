@@ -40,13 +40,20 @@
   .social-box {
     margin-top: 0;
     margin-left: 144px;
-    justify-content: flex-end;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .social-box {
-    margin-top: 12px;
+    padding-top: 12px;
     margin-left: 70px;
+    align-items: flex-start;
+  }
+
+  .social-box .social-box__container {
+    margin-bottom: 0px;
+    width: 206px;
+    height: 80px;
+    gap: 10px;
   }
 }

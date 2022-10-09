@@ -17,9 +17,7 @@
 
 .header .header__container {
   height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flexVar(flex, space-between, center);
 
   @media screen and (min-width: 768px) {
     height: 80px;
@@ -27,10 +25,9 @@
 }
 
 @media screen and (min-width: 768px) {
-  .header__rightside {
-    display: flex;
+  .header__leftside {
+    @include flexVar(flex, none, center);
     flex-direction: row;
     gap: 93px;
-    align-items: center;
   }
 }

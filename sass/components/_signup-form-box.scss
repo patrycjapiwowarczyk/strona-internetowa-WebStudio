@@ -82,12 +82,24 @@ label .signup-form__email:focus {
 
 @media screen and (min-width: 1200px) {
   .signup-form {
-    width: 452px;
+    padding-top: 7px;
+    margin-top: 0;
     margin-left: 78px;
+    width: auto;
+    align-items: flex-start;
   }
+
   .signup-form__container {
-    @include flexVar(flex, center, center);
+    display: flex;
     flex-direction: row;
-    margin-left: 20px;
+  }
+
+  label .signup-form__email {
+    width: 358px;
+  }
+
+  .signup-button {
+    margin: 0;
+    margin-left: 12px;
   }
 }
