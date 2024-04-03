@@ -1,1 +1,1 @@
-# https://patrycjapiwowarczyk.github.io/strona-internetowa-WebStudio/
+# https://patrycjapiwowarczyk.github.io/website-WebStudio/
